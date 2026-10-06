@@ -1,0 +1,4371 @@
+{
+  "version": 1,
+  "seed": 202,
+  "episodes": 420,
+  "parameters": 1813,
+  "model_sha256": "f8ac95b18fc0370a9fb5b0ea5d93f3098a7ed09be4eea561baf76a89b2353aec",
+  "evaluation_rng": "SeedSequence([seed, 100]); alternate=101; distractor=102",
+  "training_hops": "0..4",
+  "evaluation_hops": "0..6; uniform cyclic allocation",
+  "held_out": {
+    "one_read": {
+      "correct": 136,
+      "total": 420,
+      "accuracy": 0.3238095238095238,
+      "wilson95": [
+        0.2808293042651881,
+        0.36998364094830677
+      ]
+    },
+    "text_feedback": {
+      "correct": 420,
+      "total": 420,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9909362365562984,
+        1.0
+      ]
+    },
+    "latent_recurrence": {
+      "correct": 420,
+      "total": 420,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9909362365562984,
+        1.0
+      ]
+    },
+    "self_ping": {
+      "correct": 420,
+      "total": 420,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9909362365562984,
+        1.0
+      ]
+    }
+  },
+  "by_hops": {
+    "0": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "1": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "2": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "3": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "4": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "5": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    },
+    "6": {
+      "correct": 60,
+      "total": 60,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9398260695220669,
+        0.9999999999999999
+      ]
+    }
+  },
+  "causal": {
+    "intact": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9873565700022643,
+        0.9999999999999999
+      ]
+    },
+    "delete": {
+      "correct": 21,
+      "total": 300,
+      "accuracy": 0.07,
+      "wilson95": [
+        0.04623659396060609,
+        0.10463675583744661
+      ]
+    },
+    "wrong": {
+      "correct": 20,
+      "total": 300,
+      "accuracy": 0.06666666666666667,
+      "wilson95": [
+        0.04356717679698387,
+        0.10072379586772039
+      ]
+    },
+    "freeze": {
+      "correct": 21,
+      "total": 300,
+      "accuracy": 0.07,
+      "wilson95": [
+        0.04623659396060609,
+        0.10463675583744661
+      ]
+    },
+    "replay": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9873565700022643,
+        0.9999999999999999
+      ]
+    },
+    "display_only": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9873565700022643,
+        0.9999999999999999
+      ]
+    }
+  },
+  "replay_eligible": {
+    "correct": 300,
+    "total": 300,
+    "accuracy": 1.0,
+    "wilson95": [
+      0.9873565700022643,
+      0.9999999999999999
+    ]
+  },
+  "replay_affected": {
+    "correct": 280,
+    "total": 280,
+    "accuracy": 1.0,
+    "wilson95": [
+      0.9864656907232768,
+      1.0
+    ]
+  },
+  "same_present_different_history": {
+    "correct": 333,
+    "total": 333,
+    "accuracy": 1.0,
+    "wilson95": [
+      0.9885952328928495,
+      1.0
+    ]
+  },
+  "memory": {
+    "codebook": {
+      "correct": 20,
+      "total": 300,
+      "accuracy": 0.06666666666666667,
+      "wilson95": [
+        0.04356717679698387,
+        0.10072379586772039
+      ],
+      "correct_prefix_subset": {
+        "correct": 20,
+        "total": 300,
+        "accuracy": 0.06666666666666667,
+        "wilson95": [
+          0.04356717679698387,
+          0.10072379586772039
+        ]
+      },
+      "retained_numeric_scalars": 1280
+    },
+    "workspace": {
+      "correct": 0,
+      "total": 300,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.012643429997735661
+      ],
+      "correct_prefix_subset": {
+        "correct": 0,
+        "total": 300,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.012643429997735661
+        ]
+      },
+      "retained_numeric_scalars": 37
+    },
+    "residue": {
+      "correct": 0,
+      "total": 300,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.012643429997735661
+      ],
+      "correct_prefix_subset": {
+        "correct": 0,
+        "total": 300,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.012643429997735661
+        ]
+      },
+      "retained_numeric_scalars": 1
+    },
+    "codebook+residue": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9873565700022643,
+        0.9999999999999999
+      ],
+      "correct_prefix_subset": {
+        "correct": 300,
+        "total": 300,
+        "accuracy": 1.0,
+        "wilson95": [
+          0.9873565700022643,
+          0.9999999999999999
+        ]
+      },
+      "retained_numeric_scalars": 1281
+    },
+    "workspace+residue": {
+      "correct": 0,
+      "total": 300,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.012643429997735661
+      ],
+      "correct_prefix_subset": {
+        "correct": 0,
+        "total": 300,
+        "accuracy": 0.0,
+        "wilson95": [
+          0.0,
+          0.012643429997735661
+        ]
+      },
+      "retained_numeric_scalars": 38
+    },
+    "all": {
+      "correct": 300,
+      "total": 300,
+      "accuracy": 1.0,
+      "wilson95": [
+        0.9873565700022643,
+        0.9999999999999999
+      ],
+      "correct_prefix_subset": {
+        "correct": 300,
+        "total": 300,
+        "accuracy": 1.0,
+        "wilson95": [
+          0.9873565700022643,
+          0.9999999999999999
+        ]
+      },
+      "retained_numeric_scalars": 1334
+    }
+  },
+  "silence": {
+    "correct": 60,
+    "total": 60,
+    "accuracy": 1.0,
+    "wilson95": [
+      0.9398260695220669,
+      0.9999999999999999
+    ]
+  },
+  "mean_pings": 3.0,
+  "mean_wrong_geometry_delta": 1.319932658214889,
+  "payload_bytes": {
+    "text_mean": 44.88095238095238,
+    "instrumented_packet_json_mean": 1282.2904761904763
+  },
+  "gate": {
+    "passed": true,
+    "checks": {
+      "held_out_at_least_90pct": true,
+      "delete_drop_at_least_20pp": true,
+      "wrong_drop_at_least_20pp": true,
+      "correct_replay_at_least_95pct": true
+    },
+    "thresholds": {
+      "held_out": 0.9,
+      "causal_drop": 0.2,
+      "replay": 0.95
+    }
+  },
+  "limitations": [
+    "Small shared-controller ablations, not trained transformer/CoT baselines.",
+    "The parser, address basis, remaining-query cursor, fact matrices, and delta write are engineered.",
+    "Codebook includes all facts plus fast operator; C+r reconstructs h by design, not learned compression.",
+    "Soft recurrent training differs from hard sparse packet evaluation.",
+    "Payload compares full instrumented JSON with short addresses; no compression advantage is claimed.",
+    "No evidence of consciousness, spontaneous private language, or a replicated Jacobian lens."
+  ],
+  "cases": [
+    {
+      "case": 0,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 1,
+      "hops": 1,
+      "target": 1,
+      "prediction": 1
+    },
+    {
+      "case": 2,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 10,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 3,
+      "hops": 3,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 3,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 4,
+      "hops": 4,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 10,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 5,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 14,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 6,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 15,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 7,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 8,
+      "hops": 1,
+      "target": 2,
+      "prediction": 2
+    },
+    {
+      "case": 9,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 4,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 10,
+      "hops": 3,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 4,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 11,
+      "hops": 4,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 11,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 12,
+      "hops": 5,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 12,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 13,
+      "hops": 6,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 2,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 14,
+      "hops": 0,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 15,
+      "hops": 1,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 16,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 0,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 17,
+      "hops": 3,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 13,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 18,
+      "hops": 4,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 13,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 19,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 3,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 20,
+      "hops": 6,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 13,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 21,
+      "hops": 0,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 22,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 23,
+      "hops": 2,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 9,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 24,
+      "hops": 3,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 0,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 25,
+      "hops": 4,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 9,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 26,
+      "hops": 5,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 13,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 27,
+      "hops": 6,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 11,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 28,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 29,
+      "hops": 1,
+      "target": 13,
+      "prediction": 13
+    },
+    {
+      "case": 30,
+      "hops": 2,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 9,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 31,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 1,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 32,
+      "hops": 4,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 7,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 33,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 0,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 34,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 2,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 35,
+      "hops": 0,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 36,
+      "hops": 1,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 37,
+      "hops": 2,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 5,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 38,
+      "hops": 3,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 1,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 39,
+      "hops": 4,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 4,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 40,
+      "hops": 5,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 3,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 41,
+      "hops": 6,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 3,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 42,
+      "hops": 0,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 43,
+      "hops": 1,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 44,
+      "hops": 2,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 3,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 45,
+      "hops": 3,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 1,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 46,
+      "hops": 4,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 5,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 47,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 11,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 48,
+      "hops": 6,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 5,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 49,
+      "hops": 0,
+      "target": 11,
+      "prediction": 11
+    },
+    {
+      "case": 50,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 51,
+      "hops": 2,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 15,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 52,
+      "hops": 3,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 7,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 53,
+      "hops": 4,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 3,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 54,
+      "hops": 5,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 5,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 55,
+      "hops": 6,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 5,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 56,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 57,
+      "hops": 1,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 58,
+      "hops": 2,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 7,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 59,
+      "hops": 3,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 0,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 60,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 5,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 61,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 13,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 62,
+      "hops": 6,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 10,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 63,
+      "hops": 0,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 64,
+      "hops": 1,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 65,
+      "hops": 2,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 1,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 66,
+      "hops": 3,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 0,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 67,
+      "hops": 4,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 4,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 68,
+      "hops": 5,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 7,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 69,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 0,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 70,
+      "hops": 0,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 71,
+      "hops": 1,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 72,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 1,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 73,
+      "hops": 3,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 7,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 74,
+      "hops": 4,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 0,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 75,
+      "hops": 5,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 14,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 76,
+      "hops": 6,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 7,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 77,
+      "hops": 0,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 78,
+      "hops": 1,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 79,
+      "hops": 2,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 5,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 80,
+      "hops": 3,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 10,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 81,
+      "hops": 4,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 11,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 82,
+      "hops": 5,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 3,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 83,
+      "hops": 6,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 4,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 84,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 85,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 86,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 15,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 87,
+      "hops": 3,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 10,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 88,
+      "hops": 4,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 6,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 89,
+      "hops": 5,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 0,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 90,
+      "hops": 6,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 8,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 91,
+      "hops": 0,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 92,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 93,
+      "hops": 2,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 4,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 94,
+      "hops": 3,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 9,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 95,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 13,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 96,
+      "hops": 5,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 3,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 97,
+      "hops": 6,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 4,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 98,
+      "hops": 0,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 99,
+      "hops": 1,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 100,
+      "hops": 2,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 10,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 101,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 6,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 102,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 0,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 103,
+      "hops": 5,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 1,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 104,
+      "hops": 6,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 6,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 105,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 106,
+      "hops": 1,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 107,
+      "hops": 2,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 5,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 108,
+      "hops": 3,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 6,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 109,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 2,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 110,
+      "hops": 5,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 10,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 111,
+      "hops": 6,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 14,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 112,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 113,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 114,
+      "hops": 2,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 11,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 115,
+      "hops": 3,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 1,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 116,
+      "hops": 4,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 11,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 117,
+      "hops": 5,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 11,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 118,
+      "hops": 6,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 9,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 119,
+      "hops": 0,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 120,
+      "hops": 1,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 121,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 9,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 122,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 3,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 123,
+      "hops": 4,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 3,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 124,
+      "hops": 5,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 11,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 125,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 10,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 126,
+      "hops": 0,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 127,
+      "hops": 1,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 128,
+      "hops": 2,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 15,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 129,
+      "hops": 3,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 7,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 130,
+      "hops": 4,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 7,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 131,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 3,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 132,
+      "hops": 6,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 12,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 133,
+      "hops": 0,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 134,
+      "hops": 1,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 135,
+      "hops": 2,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 0,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 136,
+      "hops": 3,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 2,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 137,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 5,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 138,
+      "hops": 5,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 13,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 139,
+      "hops": 6,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 7,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 140,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 141,
+      "hops": 1,
+      "target": 11,
+      "prediction": 11
+    },
+    {
+      "case": 142,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 0,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 143,
+      "hops": 3,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 12,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 144,
+      "hops": 4,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 7,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 145,
+      "hops": 5,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 4,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 146,
+      "hops": 6,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 14,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 147,
+      "hops": 0,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 148,
+      "hops": 1,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 149,
+      "hops": 2,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 14,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 150,
+      "hops": 3,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 6,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 151,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 7,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 152,
+      "hops": 5,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 5,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 153,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 7,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 154,
+      "hops": 0,
+      "target": 11,
+      "prediction": 11
+    },
+    {
+      "case": 155,
+      "hops": 1,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 156,
+      "hops": 2,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 10,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 157,
+      "hops": 3,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 9,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 158,
+      "hops": 4,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 0,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 159,
+      "hops": 5,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 5,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 160,
+      "hops": 6,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 11,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 161,
+      "hops": 0,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 162,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 163,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 8,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 164,
+      "hops": 3,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 0,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 165,
+      "hops": 4,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 15,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 166,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 9,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 167,
+      "hops": 6,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 0,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 168,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 169,
+      "hops": 1,
+      "target": 2,
+      "prediction": 2
+    },
+    {
+      "case": 170,
+      "hops": 2,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 6,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 171,
+      "hops": 3,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 13,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 172,
+      "hops": 4,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 11,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 173,
+      "hops": 5,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 13,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 174,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 14,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 175,
+      "hops": 0,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 176,
+      "hops": 1,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 177,
+      "hops": 2,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 0,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 178,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 1,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 179,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 13,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 180,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 2,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 181,
+      "hops": 6,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 7,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 182,
+      "hops": 0,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 183,
+      "hops": 1,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 184,
+      "hops": 2,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 3,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 185,
+      "hops": 3,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 5,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 186,
+      "hops": 4,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 6,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 187,
+      "hops": 5,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 1,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 188,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 15,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 189,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 190,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 191,
+      "hops": 2,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 7,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 192,
+      "hops": 3,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 0,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 193,
+      "hops": 4,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 5,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 194,
+      "hops": 5,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 14,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 195,
+      "hops": 6,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 11,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 196,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 197,
+      "hops": 1,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 198,
+      "hops": 2,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 7,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 199,
+      "hops": 3,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 10,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 200,
+      "hops": 4,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 2,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 201,
+      "hops": 5,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 0,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 202,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 2,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 203,
+      "hops": 0,
+      "target": 13,
+      "prediction": 13
+    },
+    {
+      "case": 204,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 205,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 7,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 206,
+      "hops": 3,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 1,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 207,
+      "hops": 4,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 10,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 208,
+      "hops": 5,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 10,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 209,
+      "hops": 6,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 12,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 210,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 211,
+      "hops": 1,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 212,
+      "hops": 2,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 13,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 213,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 8,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 214,
+      "hops": 4,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 10,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 215,
+      "hops": 5,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 9,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 216,
+      "hops": 6,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 13,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 217,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 218,
+      "hops": 1,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 219,
+      "hops": 2,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 12,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 220,
+      "hops": 3,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 14,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 221,
+      "hops": 4,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 12,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 222,
+      "hops": 5,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 10,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 223,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 11,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 224,
+      "hops": 0,
+      "target": 2,
+      "prediction": 2
+    },
+    {
+      "case": 225,
+      "hops": 1,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 226,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 8,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 227,
+      "hops": 3,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 3,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 228,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 13,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 229,
+      "hops": 5,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 2,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 230,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 13,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 231,
+      "hops": 0,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 232,
+      "hops": 1,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 233,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 3,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 234,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 14,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 235,
+      "hops": 4,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 0,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 236,
+      "hops": 5,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 12,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 237,
+      "hops": 6,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 0,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 238,
+      "hops": 0,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 239,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 240,
+      "hops": 2,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 9,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 241,
+      "hops": 3,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 14,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 242,
+      "hops": 4,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 11,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 243,
+      "hops": 5,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 9,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 244,
+      "hops": 6,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 12,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 245,
+      "hops": 0,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 246,
+      "hops": 1,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 247,
+      "hops": 2,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 15,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 248,
+      "hops": 3,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 10,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 249,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 2,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 250,
+      "hops": 5,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 13,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 251,
+      "hops": 6,
+      "target": 2,
+      "prediction": 2,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 2,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 252,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 253,
+      "hops": 1,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 254,
+      "hops": 2,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 3,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 255,
+      "hops": 3,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 6,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 256,
+      "hops": 4,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 13,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 257,
+      "hops": 5,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 11,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 258,
+      "hops": 6,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 2,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 259,
+      "hops": 0,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 260,
+      "hops": 1,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 261,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 6,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 262,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 2,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 263,
+      "hops": 4,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 8,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 264,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 11,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 265,
+      "hops": 6,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 14,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 266,
+      "hops": 0,
+      "target": 1,
+      "prediction": 1
+    },
+    {
+      "case": 267,
+      "hops": 1,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 268,
+      "hops": 2,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 8,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 269,
+      "hops": 3,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 3,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 270,
+      "hops": 4,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 15,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 271,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 7,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 272,
+      "hops": 6,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 9,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 273,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 274,
+      "hops": 1,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 275,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 7,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 276,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 8,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 277,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 8,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 278,
+      "hops": 5,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 1,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 279,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 2,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 280,
+      "hops": 0,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 281,
+      "hops": 1,
+      "target": 2,
+      "prediction": 2
+    },
+    {
+      "case": 282,
+      "hops": 2,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 14,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 283,
+      "hops": 3,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 10,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 284,
+      "hops": 4,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 13,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 285,
+      "hops": 5,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 7,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 286,
+      "hops": 6,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 4,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 287,
+      "hops": 0,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 288,
+      "hops": 1,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 289,
+      "hops": 2,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 3,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 290,
+      "hops": 3,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 0,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 291,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 7,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 292,
+      "hops": 5,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 6,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 293,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 13,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 294,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 295,
+      "hops": 1,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 296,
+      "hops": 2,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 8,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 297,
+      "hops": 3,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 14,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 298,
+      "hops": 4,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 10,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 299,
+      "hops": 5,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 6,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 300,
+      "hops": 6,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 9,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 301,
+      "hops": 0,
+      "target": 13,
+      "prediction": 13
+    },
+    {
+      "case": 302,
+      "hops": 1,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 303,
+      "hops": 2,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 10,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 304,
+      "hops": 3,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 8,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 305,
+      "hops": 4,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 4,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 306,
+      "hops": 5,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 3,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 307,
+      "hops": 6,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 0,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 308,
+      "hops": 0,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 309,
+      "hops": 1,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 310,
+      "hops": 2,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 1,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 311,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 11,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 312,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 5,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 313,
+      "hops": 5,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 12,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 314,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 8,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 315,
+      "hops": 0,
+      "target": 13,
+      "prediction": 13
+    },
+    {
+      "case": 316,
+      "hops": 1,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 317,
+      "hops": 2,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 5,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 318,
+      "hops": 3,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 5,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 319,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 12,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 320,
+      "hops": 5,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 14,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 321,
+      "hops": 6,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 0,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 322,
+      "hops": 0,
+      "target": 0,
+      "prediction": 0
+    },
+    {
+      "case": 323,
+      "hops": 1,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 324,
+      "hops": 2,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 14,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 325,
+      "hops": 3,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 12,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 326,
+      "hops": 4,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 1,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 327,
+      "hops": 5,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 14,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 328,
+      "hops": 6,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 7,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 329,
+      "hops": 0,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 330,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 331,
+      "hops": 2,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 12,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 332,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 2,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 333,
+      "hops": 4,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 9,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 334,
+      "hops": 5,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 12,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 335,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 10,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 336,
+      "hops": 0,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 337,
+      "hops": 1,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 338,
+      "hops": 2,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 13,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 339,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 1,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 340,
+      "hops": 4,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 12,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 341,
+      "hops": 5,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 13,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 342,
+      "hops": 6,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 0,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 343,
+      "hops": 0,
+      "target": 11,
+      "prediction": 11
+    },
+    {
+      "case": 344,
+      "hops": 1,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 345,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 10,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 346,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 10,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 347,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 2,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 348,
+      "hops": 5,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 4,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 349,
+      "hops": 6,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 2,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 350,
+      "hops": 0,
+      "target": 12,
+      "prediction": 12
+    },
+    {
+      "case": 351,
+      "hops": 1,
+      "target": 15,
+      "prediction": 15
+    },
+    {
+      "case": 352,
+      "hops": 2,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 2,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 353,
+      "hops": 3,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 8,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 354,
+      "hops": 4,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 6,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 355,
+      "hops": 5,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 8,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 356,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 12,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 357,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 358,
+      "hops": 1,
+      "target": 11,
+      "prediction": 11
+    },
+    {
+      "case": 359,
+      "hops": 2,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 1,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 360,
+      "hops": 3,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 8,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 361,
+      "hops": 4,
+      "target": 3,
+      "prediction": 3,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 14,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 362,
+      "hops": 5,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 12,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 363,
+      "hops": 6,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 15,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 364,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 365,
+      "hops": 1,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 366,
+      "hops": 2,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 8,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 367,
+      "hops": 3,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 14,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 368,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 4,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 369,
+      "hops": 5,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 2,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 370,
+      "hops": 6,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 10,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 371,
+      "hops": 0,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 372,
+      "hops": 1,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 373,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 6,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 374,
+      "hops": 3,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 11,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 375,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 2,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 376,
+      "hops": 5,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 7,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 377,
+      "hops": 6,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 1,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 378,
+      "hops": 0,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 379,
+      "hops": 1,
+      "target": 4,
+      "prediction": 4
+    },
+    {
+      "case": 380,
+      "hops": 2,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 14,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 381,
+      "hops": 3,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 15,
+        "wrong": 6,
+        "freeze": 15
+      }
+    },
+    {
+      "case": 382,
+      "hops": 4,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 13,
+        "wrong": 13,
+        "freeze": 13
+      }
+    },
+    {
+      "case": 383,
+      "hops": 5,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 9,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 384,
+      "hops": 6,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 13,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 385,
+      "hops": 0,
+      "target": 10,
+      "prediction": 10
+    },
+    {
+      "case": 386,
+      "hops": 1,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 387,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 4,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 388,
+      "hops": 3,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 5,
+        "wrong": 1,
+        "freeze": 5
+      }
+    },
+    {
+      "case": 389,
+      "hops": 4,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 3,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 390,
+      "hops": 5,
+      "target": 8,
+      "prediction": 8,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 6,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 391,
+      "hops": 6,
+      "target": 12,
+      "prediction": 12,
+      "intervention_predictions": {
+        "delete": 6,
+        "wrong": 2,
+        "freeze": 6
+      }
+    },
+    {
+      "case": 392,
+      "hops": 0,
+      "target": 5,
+      "prediction": 5
+    },
+    {
+      "case": 393,
+      "hops": 1,
+      "target": 14,
+      "prediction": 14
+    },
+    {
+      "case": 394,
+      "hops": 2,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 14,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 395,
+      "hops": 3,
+      "target": 13,
+      "prediction": 13,
+      "intervention_predictions": {
+        "delete": 2,
+        "wrong": 1,
+        "freeze": 2
+      }
+    },
+    {
+      "case": 396,
+      "hops": 4,
+      "target": 11,
+      "prediction": 11,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 1,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 397,
+      "hops": 5,
+      "target": 5,
+      "prediction": 5,
+      "intervention_predictions": {
+        "delete": 14,
+        "wrong": 7,
+        "freeze": 14
+      }
+    },
+    {
+      "case": 398,
+      "hops": 6,
+      "target": 6,
+      "prediction": 6,
+      "intervention_predictions": {
+        "delete": 3,
+        "wrong": 0,
+        "freeze": 3
+      }
+    },
+    {
+      "case": 399,
+      "hops": 0,
+      "target": 7,
+      "prediction": 7
+    },
+    {
+      "case": 400,
+      "hops": 1,
+      "target": 9,
+      "prediction": 9
+    },
+    {
+      "case": 401,
+      "hops": 2,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 15,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 402,
+      "hops": 3,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 0,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 403,
+      "hops": 4,
+      "target": 7,
+      "prediction": 7,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 10,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 404,
+      "hops": 5,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 1,
+        "wrong": 14,
+        "freeze": 1
+      }
+    },
+    {
+      "case": 405,
+      "hops": 6,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 9,
+        "wrong": 11,
+        "freeze": 9
+      }
+    },
+    {
+      "case": 406,
+      "hops": 0,
+      "target": 13,
+      "prediction": 13
+    },
+    {
+      "case": 407,
+      "hops": 1,
+      "target": 8,
+      "prediction": 8
+    },
+    {
+      "case": 408,
+      "hops": 2,
+      "target": 15,
+      "prediction": 15,
+      "intervention_predictions": {
+        "delete": 7,
+        "wrong": 3,
+        "freeze": 7
+      }
+    },
+    {
+      "case": 409,
+      "hops": 3,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 0,
+        "wrong": 0,
+        "freeze": 0
+      }
+    },
+    {
+      "case": 410,
+      "hops": 4,
+      "target": 4,
+      "prediction": 4,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 10,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 411,
+      "hops": 5,
+      "target": 1,
+      "prediction": 1,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 12,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 412,
+      "hops": 6,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 10,
+        "wrong": 10,
+        "freeze": 10
+      }
+    },
+    {
+      "case": 413,
+      "hops": 0,
+      "target": 6,
+      "prediction": 6
+    },
+    {
+      "case": 414,
+      "hops": 1,
+      "target": 3,
+      "prediction": 3
+    },
+    {
+      "case": 415,
+      "hops": 2,
+      "target": 9,
+      "prediction": 9,
+      "intervention_predictions": {
+        "delete": 11,
+        "wrong": 2,
+        "freeze": 11
+      }
+    },
+    {
+      "case": 416,
+      "hops": 3,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 12,
+        "wrong": 8,
+        "freeze": 12
+      }
+    },
+    {
+      "case": 417,
+      "hops": 4,
+      "target": 10,
+      "prediction": 10,
+      "intervention_predictions": {
+        "delete": 4,
+        "wrong": 3,
+        "freeze": 4
+      }
+    },
+    {
+      "case": 418,
+      "hops": 5,
+      "target": 14,
+      "prediction": 14,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 10,
+        "freeze": 8
+      }
+    },
+    {
+      "case": 419,
+      "hops": 6,
+      "target": 0,
+      "prediction": 0,
+      "intervention_predictions": {
+        "delete": 8,
+        "wrong": 3,
+        "freeze": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "seed": 7,
+  "steps": 1000,
+  "batch_size": 64,
+  "max_hops": 4,
+  "learning_rate": 0.02,
+  "parameters": 1813,
+  "training_rng": "SeedSequence([seed, 1])",
+  "validation_rng": "SeedSequence([seed, 2])",
+  "phases": [
+    {
+      "step": 1,
+      "teacher": 0.8,
+      "auxiliary": 1.0,
+      "loss": 4.4451646489436625,
+      "accuracy": 0.109375,
+      "answer_loss": 2.775540917594097,
+      "auxiliary_loss": 1.6680086188633712,
+      "ping_loss": 0.0016151124861943623
+    },
+    {
+      "step": 100,
+      "teacher": 0.6240000000000001,
+      "auxiliary": 0.78,
+      "loss": 0.4542644920511936,
+      "accuracy": 1.0,
+      "answer_loss": 0.45335287207135655,
+      "auxiliary_loss": 0.00026155637541718695,
+      "ping_loss": 0.000650063604419869
+    },
+    {
+      "step": 200,
+      "teacher": 0.4462222222222222,
+      "auxiliary": 0.5577777777777777,
+      "loss": 0.12239244873933959,
+      "accuracy": 1.0,
+      "answer_loss": 0.1215458888755202,
+      "auxiliary_loss": 9.029479325953111e-05,
+      "ping_loss": 0.0007562650705598607
+    },
+    {
+      "step": 300,
+      "teacher": 0.2684444444444445,
+      "auxiliary": 0.3355555555555556,
+      "loss": 0.061912005088267316,
+      "accuracy": 1.0,
+      "answer_loss": 0.060984802571484,
+      "auxiliary_loss": 3.9701991801631455e-05,
+      "ping_loss": 0.0008875005249816892
+    },
+    {
+      "step": 400,
+      "teacher": 0.09066666666666663,
+      "auxiliary": 0.11333333333333329,
+      "loss": 0.037832429926654414,
+      "accuracy": 1.0,
+      "answer_loss": 0.037041402920314916,
+      "auxiliary_loss": 9.774571430507042e-06,
+      "ping_loss": 0.000781252434908995
+    },
+    {
+      "step": 500,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.026490957597062065,
+      "accuracy": 1.0,
+      "answer_loss": 0.025772202878824153,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0007187547182379135
+    },
+    {
+      "step": 600,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.019918463618127283,
+      "accuracy": 1.0,
+      "answer_loss": 0.019087221810622404,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0008312418075048793
+    },
+    {
+      "step": 700,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.015396903142825793,
+      "accuracy": 1.0,
+      "answer_loss": 0.014784391273594443,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0006125118692313495
+    },
+    {
+      "step": 800,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.012470429019530325,
+      "accuracy": 1.0,
+      "answer_loss": 0.011776678038657876,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0006937509808724486
+    },
+    {
+      "step": 900,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.010514224098123902,
+      "accuracy": 1.0,
+      "answer_loss": 0.009732967358636883,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0007812567394870199
+    },
+    {
+      "step": 1000,
+      "teacher": 0.0,
+      "auxiliary": 0.0,
+      "loss": 0.008993317121021792,
+      "accuracy": 1.0,
+      "answer_loss": 0.008149560699445784,
+      "auxiliary_loss": 0.0,
+      "ping_loss": 0.0008437564215760082
+    }
+  ],
+  "soft_validation": {
+    "accuracy": 1.0,
+    "answer_loss": 0.0081473394840536,
+    "auxiliary_loss": 0.0,
+    "ping_loss": 0.0007343786737336758
+  },
+  "seconds": 5.192315420999989,
+  "learning": "Exact BPTT through soft packet feedback; Adam. Guided supervision fades to zero."
+}

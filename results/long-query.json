@@ -1,0 +1,610 @@
+{
+  "kind": "post-review long-query diagnostic",
+  "hops": 32,
+  "seeds": "0..99, default_rng(seed)",
+  "correct": 100,
+  "total": 100,
+  "feature": "min(remaining,4)/8",
+  "cases": [
+    {
+      "seed": 0,
+      "target": 15,
+      "prediction": 15,
+      "status": "complete"
+    },
+    {
+      "seed": 1,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 2,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 3,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 4,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 5,
+      "target": 2,
+      "prediction": 2,
+      "status": "complete"
+    },
+    {
+      "seed": 6,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 7,
+      "target": 4,
+      "prediction": 4,
+      "status": "complete"
+    },
+    {
+      "seed": 8,
+      "target": 3,
+      "prediction": 3,
+      "status": "complete"
+    },
+    {
+      "seed": 9,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 10,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 11,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 12,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 13,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 14,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 15,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 16,
+      "target": 4,
+      "prediction": 4,
+      "status": "complete"
+    },
+    {
+      "seed": 17,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 18,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 19,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 20,
+      "target": 6,
+      "prediction": 6,
+      "status": "complete"
+    },
+    {
+      "seed": 21,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 22,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 23,
+      "target": 6,
+      "prediction": 6,
+      "status": "complete"
+    },
+    {
+      "seed": 24,
+      "target": 5,
+      "prediction": 5,
+      "status": "complete"
+    },
+    {
+      "seed": 25,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 26,
+      "target": 2,
+      "prediction": 2,
+      "status": "complete"
+    },
+    {
+      "seed": 27,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 28,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 29,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 30,
+      "target": 4,
+      "prediction": 4,
+      "status": "complete"
+    },
+    {
+      "seed": 31,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 32,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 33,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 34,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 35,
+      "target": 4,
+      "prediction": 4,
+      "status": "complete"
+    },
+    {
+      "seed": 36,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 37,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 38,
+      "target": 4,
+      "prediction": 4,
+      "status": "complete"
+    },
+    {
+      "seed": 39,
+      "target": 5,
+      "prediction": 5,
+      "status": "complete"
+    },
+    {
+      "seed": 40,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 41,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 42,
+      "target": 5,
+      "prediction": 5,
+      "status": "complete"
+    },
+    {
+      "seed": 43,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 44,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 45,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 46,
+      "target": 3,
+      "prediction": 3,
+      "status": "complete"
+    },
+    {
+      "seed": 47,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 48,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 49,
+      "target": 2,
+      "prediction": 2,
+      "status": "complete"
+    },
+    {
+      "seed": 50,
+      "target": 15,
+      "prediction": 15,
+      "status": "complete"
+    },
+    {
+      "seed": 51,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 52,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 53,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 54,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 55,
+      "target": 6,
+      "prediction": 6,
+      "status": "complete"
+    },
+    {
+      "seed": 56,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 57,
+      "target": 15,
+      "prediction": 15,
+      "status": "complete"
+    },
+    {
+      "seed": 58,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 59,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 60,
+      "target": 2,
+      "prediction": 2,
+      "status": "complete"
+    },
+    {
+      "seed": 61,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 62,
+      "target": 15,
+      "prediction": 15,
+      "status": "complete"
+    },
+    {
+      "seed": 63,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 64,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 65,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 66,
+      "target": 5,
+      "prediction": 5,
+      "status": "complete"
+    },
+    {
+      "seed": 67,
+      "target": 3,
+      "prediction": 3,
+      "status": "complete"
+    },
+    {
+      "seed": 68,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 69,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 70,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 71,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 72,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 73,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 74,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 75,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 76,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 77,
+      "target": 10,
+      "prediction": 10,
+      "status": "complete"
+    },
+    {
+      "seed": 78,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 79,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 80,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 81,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 82,
+      "target": 9,
+      "prediction": 9,
+      "status": "complete"
+    },
+    {
+      "seed": 83,
+      "target": 6,
+      "prediction": 6,
+      "status": "complete"
+    },
+    {
+      "seed": 84,
+      "target": 14,
+      "prediction": 14,
+      "status": "complete"
+    },
+    {
+      "seed": 85,
+      "target": 5,
+      "prediction": 5,
+      "status": "complete"
+    },
+    {
+      "seed": 86,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 87,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 88,
+      "target": 0,
+      "prediction": 0,
+      "status": "complete"
+    },
+    {
+      "seed": 89,
+      "target": 2,
+      "prediction": 2,
+      "status": "complete"
+    },
+    {
+      "seed": 90,
+      "target": 3,
+      "prediction": 3,
+      "status": "complete"
+    },
+    {
+      "seed": 91,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 92,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 93,
+      "target": 13,
+      "prediction": 13,
+      "status": "complete"
+    },
+    {
+      "seed": 94,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 95,
+      "target": 12,
+      "prediction": 12,
+      "status": "complete"
+    },
+    {
+      "seed": 96,
+      "target": 11,
+      "prediction": 11,
+      "status": "complete"
+    },
+    {
+      "seed": 97,
+      "target": 8,
+      "prediction": 8,
+      "status": "complete"
+    },
+    {
+      "seed": 98,
+      "target": 7,
+      "prediction": 7,
+      "status": "complete"
+    },
+    {
+      "seed": 99,
+      "target": 1,
+      "prediction": 1,
+      "status": "complete"
+    }
+  ]
+}
